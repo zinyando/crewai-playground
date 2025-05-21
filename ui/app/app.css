@@ -8,8 +8,29 @@
 html,
 body {
   @apply bg-white dark:bg-gray-950;
+  @apply h-full;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+/* Base styles */
+* {
+  @apply box-border;
+}
+
+/* Layout styles */
+.layout-container {
+  @apply flex h-screen overflow-hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+  @apply flex flex-col bg-gray-100 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800;
+}
+
+/* Main content area */
+.main-content {
+  @apply flex-1 overflow-auto p-6;
 }
